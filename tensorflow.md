@@ -1,10 +1,20 @@
-#### [Tensorflow](https://www.tensorflow.org/programmers_guide/tensors)
+### [Tensorflow](https://www.tensorflow.org/programmers_guide/tensors)
 
 
-#### For noobs
+#### [For noobs](https://www.tensorflow.org/get_started/get_started)
+* The central unit of data in TensorFlow is the tensor. A tensor consists of a set of primitive values shaped into an array of any number of dimensions. A tensor's rank is its number of dimensions.
 * TensorFlow provides a utility called TensorBoard that can display a picture of the computational graph.
-
 * A graph can be parameterized to accept external inputs, known as placeholders. A placeholder is a promise to provide a value later.
+* Building the graph and running the graph.
+* A computational graph is a series of TensorFlow operations arranged into a graph of nodes. 
+* To actually evaluate the nodes, we must run the computational graph within a session. A session encapsulates the control and state of the TensorFlow runtime.
+* Build more complicated computations by combining Tensor nodes with operations (Operations are also nodes)
+* A graph can be parameterized to accept external inputs, known as placeholders. A placeholder is a promise to provide a value later.
+* Variables allow us to add trainable parameters to a graph. They are constructed with a type and initial value
+* To initialize all the variables in a TensorFlow program, you must explicitly call a special operation as follows:
+> init = tf.global_variables_initializer()
+> sess.run(init)
+* 
 
 ##### tf.train API
 
@@ -32,5 +42,4 @@
 
 
 #### Links
-1. [For noobs](https://www.tensorflow.org/get_started/get_started)
 2. 
